@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas</title>
+  <link rel="icon" href="img/faviconTlv3.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CDN para DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="bg-light p-3 rounded-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid p-0">
+        <h1 class="my-2 me-5">Te Lo Vendo</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid my-4 mx-0 p-3">
+    <section class="mb-5">
+      <h2>Estadísticas</h2>
+      <!-- Aquí va la tabla de estadísticas -->
+      <table id="tablaEstadisticas" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Ventas 2024</th>
+            <th>Ventas 2023</th>
+            <th>Unidades en stock</th>
+            <th>Valoración promedio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Smartphone</td>
+            <td>500</td>
+            <td>450</td>
+            <td>150</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>300</td>
+            <td>280</td>
+            <td>80</td>
+            <td>4.7</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>200</td>
+            <td>180</td>
+            <td>50</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Smartwatch</td>
+            <td>150</td>
+            <td>130</td>
+            <td>30</td>
+            <td>4.8</td>
+        </tr>
+        <tr>
+            <td>TV LED</td>
+            <td>180</td>
+            <td>160</td>
+            <td>70</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>Auriculares inalámbricos</td>
+            <td>250</td>
+            <td>230</td>
+            <td>60</td>
+            <td>4.4</td>
+        </tr>
+        <tr>
+            <td>Impresora multifuncional</td>
+            <td>120</td>
+            <td>100</td>
+            <td>40</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <td>Consola de videojuegos</td>
+            <td>180</td>
+            <td>160</td>
+            <td>50</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>Cámara DSLR</td>
+            <td>90</td>
+            <td>80</td>
+            <td>25</td>
+            <td>4.8</td>
+        </tr>
+        <tr>
+            <td>Altavoz Bluetooth</td>
+            <td>200</td>
+            <td>180</td>
+            <td>70</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>Teclado mecánico</td>
+            <td>150</td>
+            <td>130</td>
+            <td>45</td>
+            <td>4.7</td>
+        </tr>
+        <tr>
+          <td>Monitor UltraWide</td>
+          <td>120</td>
+          <td>110</td>
+          <td>30</td>
+          <td>4.4</td>
+      </tr>
+      <tr>
+          <td>Impresora láser</td>
+          <td>80</td>
+          <td>70</td>
+          <td>20</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Auriculares con cancelación de ruido</td>
+          <td>180</td>
+          <td>160</td>
+          <td>50</td>
+          <td>4.7</td>
+      </tr>
+      <tr>
+          <td>Robot aspirador</td>
+          <td>100</td>
+          <td>90</td>
+          <td>25</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Reproductor Blu-ray</td>
+          <td>70</td>
+          <td>60</td>
+          <td>15</td>
+          <td>4.3</td>
+      </tr>
+      <tr>
+          <td>Proyector 4K</td>
+          <td>150</td>
+          <td>140</td>
+          <td>40</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>Memoria USB</td>
+          <td>200</td>
+          <td>180</td>
+          <td>60</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Escáner portátil</td>
+          <td>90</td>
+          <td>80</td>
+          <td>30</td>
+          <td>4.2</td>
+      </tr>
+      <tr>
+          <td>Procesador de alimentos</td>
+          <td>110</td>
+          <td>100</td>
+          <td>35</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Router WiFi</td>
+          <td>130</td>
+          <td>120</td>
+          <td>40</td>
+          <td>4.4</td>
+      </tr>
+      <tr>
+          <td>Teclado ergonómico</td>
+          <td>80</td>
+          <td>70</td>
+          <td>25</td>
+          <td>4.7</td>
+      </tr>
+      <tr>
+          <td>Mouse gaming</td>
+          <td>150</td>
+          <td>140</td>
+          <td>45</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>Batería externa</td>
+          <td>220</td>
+          <td>200</td>
+          <td>60</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Adaptador USB-C</td>
+          <td>120</td>
+          <td>110</td>
+          <td>30</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Estuche para laptop</td>
+          <td>80</td>
+          <td>70</td>
+          <td>20</td>
+          <td>4.3</td>
+      </tr>
+      <tr>
+          <td>Lámpara LED inteligente</td>
+          <td>100</td>
+          <td>90</td>
+          <td>25</td>
+          <td>4.7</td>
+      </tr>
+      <tr>
+          <td>Base refrigerante para laptop</td>
+          <td>120</td>
+          <td>110</td>
+          <td>35</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>Hub USB</td>
+          <td>150</td>
+          <td>140</td>
+          <td>40</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Cargador inalámbrico</td>
+          <td>200</td>
+          <td>180</td>
+          <td>55</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Soporte para celular</td>
+          <td>90</td>
+          <td>80</td>
+          <td>30</td>
+          <td>4.4</td>
+      </tr>
+      <tr>
+          <td>Memoria externa SSD</td>
+          <td>130</td>
+          <td>120</td>
+          <td>40</td>
+          <td>4.7</td>
+      </tr>
+      <tr>
+          <td>Monitor gamer</td>
+          <td>180</td>
+          <td>160</td>
+          <td>50</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>Asistente virtual</td>
+          <td>100</td>
+          <td>90</td>
+          <td>25</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Impresora fotográfica</td>
+          <td>150</td>
+          <td>140</td>
+          <td>45</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Kit de herramientas de reparación</td>
+          <td>120</td>
+          <td>110</td>
+          <td>30</td>
+          <td>4.3</td>
+      </tr>
+      <tr>
+          <td>Monitor táctil</td>
+          <td>90</td>
+          <td>80</td>
+          <td>20</td>
+          <td>4.7</td>
+      </tr>
+      <tr>
+          <td>Proyector portátil</td>
+          <td>140</td>
+          <td>130</td>
+          <td>35</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>Controlador MIDI</td>
+          <td>80</td>
+          <td>70</td>
+          <td>25</td>
+          <td>4.5</td>
+      </tr>
+      <tr>
+          <td>Maletín para laptop</td>
+          <td>110</td>
+          <td>100</td>
+          <td>30</td>
+          <td>4.6</td>
+      </tr>
+      <tr>
+          <td>Router 5G</td>
+          <td>160</td>
+          <td>150</td>
+          <td>40</td>
+          <td>4.5</td>
+      </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="bg-light p-3 rounded-3">
+    <h4>Equipo Nro.3 Integrantes:</h4>
+    <ul>
+      <li>Beatriz Maldonado</li>
+      <li>Carolina Diaz</li>
+      <li>Felipe Martinez</li>
+      <li>Ricardo Ramones</li>
+      <li>Sammy Maldonado</li>
+    </ul>
+  </footer>
+
+  <!-- Scripts al final del body para optimización de carga -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- CDN para jQuery (necesario para DataTables) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- CDN para DataTables -->
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.min.js"></script>
+  <!-- Inicialización de DataTables -->
+  <script>
+    $(document).ready(function () {
+      $('#tablaEstadisticas').DataTable();
+    });
+  </script>
+  <script src="funciones.js"></script>
+</body>
+
+</html>
